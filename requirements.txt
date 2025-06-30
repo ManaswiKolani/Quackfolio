@@ -1,0 +1,7 @@
+Flask
+yfinance
+requests
+python-dotenv
+pandas
+
+-e .
