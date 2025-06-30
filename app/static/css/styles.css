@@ -1,0 +1,201 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    touch-action: manipulation;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bradley Hand', cursive;
+    overflow: hidden;
+}
+
+.screen {
+    width: 390px;
+    height: 844px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+.content {
+    position: absolute;
+    top: 320px;
+    width: 100%;
+    text-align: center;
+}
+
+.search-bar input {
+    font-family: 'Bradley Hand', cursive;
+    font-size: 16px;
+    padding: 8px;
+    border: 2px solid #888;
+    border-radius: 5px;
+    width: 180px;
+    background-color: #fff;
+}
+
+.stock-tags {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.inline-form {
+    display: inline-flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.stock-tag {
+    background-color: #ddd;
+    border: 2px solid #999;
+    color: #444;
+    font-family: 'Bradley Hand', cursive;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+
+.delete-x {
+    background: none;
+    border: none;
+    color: #666;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 2px;
+}
+
+.error-message {
+    color: #ac7207;
+    font-family: 'Bradley Hand', cursive;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.done-button {
+    background-color: #ccc;
+    border: 2px solid #444;
+    padding: 8px 16px;
+    margin-top: 30px;
+    font-family: 'Bradley Hand', cursive;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* Pond and ducks */
+.duck-img {
+    width: 106px;
+    height: auto;
+    position: absolute;
+    pointer-events: auto;
+}
+
+.duck-1, .duck-2, .duck-3, .duck-4, .duck-5 {
+    position: absolute;
+}
+
+.duck-1 { top: 380px; left: 178px; }
+.duck-2 { top: 658px; left: 210px; }
+.duck-3 { top: 599px; left: 75px; }
+.duck-4 { top: 465px; left: 10px; }
+.duck-5 { top: 520px; left: 220px; }
+
+.dialogue-1, .dialogue-2, .dialogue-3, .dialogue-4, .dialogue-5 {
+    position: absolute;
+    width: 70px;
+    font-family: 'Bradley Hand', cursive;
+    font-size: 11.5px;
+    text-align: center;
+}
+
+.dialogue-1.positive,
+.dialogue-2.positive,
+.dialogue-3.positive,
+.dialogue-4.positive,
+.dialogue-5.positive {
+    color: darkgreen !important;
+}
+
+.dialogue-1.negative,
+.dialogue-2.negative,
+.dialogue-3.negative,
+.dialogue-4.negative,
+.dialogue-5.negative {
+    color: darkred !important;
+}
+
+.dialogue-1 { top: 380px; left: 107px; }
+.dialogue-2 { top: 722px; left: 125px; }
+.dialogue-3 { top: 600px; left: 6px; }
+.dialogue-4 { top: 468px; left: 112px; }
+.dialogue-5 { top: 495px; right: 5px; }
+
+.info-text {
+    position: absolute;
+    top: 180px;
+    left: 10px;
+    width: 370px;
+    text-align: center;
+    font-family: 'Bradley Hand', cursive;
+    font-size: 14px;
+    color: #252424;
+    line-height: 1.4;
+}
+
+
+.stock-popup {
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    width: 300px;
+    height : 500px;
+    background-color: #f0f0f0;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    z-index: 1000;
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.popup-content {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#popup-close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.popup-body {
+    text-align: left;
+    color: #222;
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.popup-body img {
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}

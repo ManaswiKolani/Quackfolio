@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=390, height=844, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Quackfolio – Select Stocks</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/good_duck.PNG') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="screen" style="background-image: url('{{ background }}');">
+        <div class="content">
+
+            <form method="POST" class="search-bar">
+                {% if selected|length < 5 %}
+                    <input type="text" name="add_stock" placeholder="e.g. AAPL" maxlength="10" required>
+                {% endif %}
+            </form>
+
+            <div class="stock-tags">
+                {% for stock in selected %}
+                    <form method="POST" class="inline-form">
+                        <div class="stock-tag">{{ stock }}</div>
+                        <button name="remove_stock" value="{{ stock }}" class="delete-x">×</button>
+                    </form>
+                {% endfor %}
+            </div>
+
+            {% if error_message %}
+                <div class="error-message">{{ error_message }}</div>
+            {% endif %}
+
+            {% if selected|length == 5 %}
+                <form method="POST">
+                    <button name="done" class="done-button">Done</button>
+                </form>
+            {% endif %}
+
+        </div>
+    </div>
+</body>
+</html>

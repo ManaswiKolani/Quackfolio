@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=390, height=844, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Quackfolio</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/good_duck.PNG') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="screen" style="background-image: url('{{ background }}');">
+
+        <!-- Info box with date, time, and data source -->
+        <div class="info-text">
+            Date : {{ current_date }} &nbsp; Time: {{ current_time }}<br>
+            Prices reflect change over the last 2 trading days.<br>
+            Data powered by Yahoo Finance. <br>
+            Click on ducks for more information!
+        </div>
+
+        <!-- Ducks + Stock Info -->
+        {% for i in range(5) %}
+            <div class="duck-{{ i+1 }}">
+                <img src="{{ duck_urls[i] }}"
+                class="duck-img"
+                data-status="{{ 'good' if stock_changes[i] >= 0 else 'bad' }}"
+                data-ticker="{{ stock_data[i].ticker }}"
+                data-price="{{ stock_data[i].price }}"
+                data-change="{{ stock_data[i].change }}"
+                data-percent="{{ stock_data[i].percent_change }}"
+                data-volume="{{ stock_data[i].volume }}"
+                data-avg-volume="{{ stock_data[i].avg_volume }}"
+                data-market-cap="{{ stock_data[i].market_cap }}"
+                data-pe="{{ stock_data[i].pe_ratio }}"
+                data-change52wk="{{ stock_data[i].change_52wk }}"
+                data-graph="{{ stock_data[i].graph_url }}">
+
+
+            </div>
+            <div class="dialogue-{{ i+1 }} {% if stock_changes[i] >= 0 %}positive{% else %}negative{% endif %}">
+                {{ stock_details[i] }}
+            </div>
+        {% endfor %}
+
+        <!-- Popup (initially hidden) -->
+        <div id="stock-popup" class="stock-popup hidden">
+            <div class="popup-content">
+                <span id="popup-close">&times;</span>
+                <div id="popup-body" class="popup-body"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

@@ -3,5 +3,6 @@ yfinance
 requests
 python-dotenv
 pandas
+matplotlib
 
 -e .
