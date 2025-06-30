@@ -6,11 +6,11 @@
 
 
 Quackfolio is a **stock portfolio companion** that helps you visualize your stock selections as adorable ducks floating in a pond.  
-Each duck represents a stock ticker and reflects its recent market performance, good stocks with a clean duck, bad ones as dirty ducks.
+Each duck represents a stock ticker and reflects its recent market performance; clean ducks represent good stocks, while bad ones are depicted as dirty ducks.
 
 ---
 
-### 🧠 What Does Quackfolio Do?
+### 𓅭 What Does Quackfolio Do?
 
 - **Add up to 5 stock tickers** from Yahoo Finance
 - Ducks appear in your pond based on stock performance
@@ -22,7 +22,7 @@ Each duck represents a stock ticker and reflects its recent market performance, 
 
 ---
 
-### 🛠️ How Is It Built?
+### 𓅭 How Is It Built?
 
 - **Frontend**: HTML, CSS, JavaScript  
 - **Backend**: Flask (Python)
@@ -32,7 +32,7 @@ Each duck represents a stock ticker and reflects its recent market performance, 
 
 ---
 
-### 🖼️ Preview
+### 𓅭 Preview
 
 | Opening Page | Stock Selection | Pond View | Additional Details |
 |----------------|--------------------|-------------|-------------|
@@ -40,13 +40,13 @@ Each duck represents a stock ticker and reflects its recent market performance, 
 
 ---
 
-### ✨ Inspired By
+### ♡ Inspired By
 
 [Life of Gaurz – YouTube Channel](https://www.youtube.com/@lifeofgaurz/featured)
 
 ---
 
-### 🚀 How to Run Locally
+### How to Run Locally
 
 1. **Clone the repo**
    ```bash
@@ -58,26 +58,26 @@ Each duck represents a stock ticker and reflects its recent market performance, 
     ```
 
 2. Create .env file:
-```bash
-    cp .env.example .env
-```
+  ```bash
+      cp .env.example .env
+  ```
 Open .env and set:
-```bash
-SECRET_KEY=your-very-secret-key
-
-```
+  ```bash
+  SECRET_KEY=your-very-secret-key
+  
+  ```
 3. Run the app:
 
-```bash
- python run.py
-```
+  ```bash
+   python run.py
+  ```
 
-3. **Visit Site**
+4. **Visit Site**
 
-Open your browser and go to http://localhost:5000
+  Open your browser and go to http://localhost:5000
 
 
-🧡 Credits
+𓅭 Credits
 Duck icons and background drawn by hand.  
 Powered by open data from Yahoo Finance via yfinance.
 
