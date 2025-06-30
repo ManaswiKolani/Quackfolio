@@ -77,7 +77,7 @@ Open .env and set:
   Open your browser and go to http://localhost:5000
 
 
-𓅭 Credits
+### 𓅭 Credits  
 Duck icons and background drawn by hand.  
 Powered by open data from Yahoo Finance via yfinance.
 
