@@ -34,7 +34,7 @@ Each duck represents a stock ticker and reflects its recent market performance, 
 
 ### 🖼️ Preview
 
-| Duck Pond View | Stock Detail Popup | Add Tickers | Search Page |
+| Opening Page | Stock Selection | Pond View | Additional Details |
 |----------------|--------------------|-------------|-------------|
 | ![1](app/static/images/preview1.png) | ![2](app/static/images/preview2.png) | ![3](app/static/images/preview3.png) | ![4](app/static/images/preview4.png) |
 
