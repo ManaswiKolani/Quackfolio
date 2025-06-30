@@ -35,7 +35,8 @@ Each duck represents a stock ticker and reflects its recent market performance; 
 ### 𓅭 Preview
 | Opening Page | Stock Selection | Pond View | Additional Details |
 |--------------|------------------|-----------|---------------------|
-| <img src="app/static/images/preview1.png" width="200" height = "500"/> | <img src="app/static/images/preview2.png" width="500" height = "700"/> | <img src="app/static/images/preview3.png" width="200" height = "500"/> | <img src="app/static/images/preview4.png" width="200" height = "500"/> |
+| <img src="app/static/images/preview1.png" width="200"/> | <img src="app/static/images/preview2.png" width="200"/> | <img src="app/static/images/preview3.png" width="200"/> | <img src="app/static/images/preview4.png" width="200"/> |
+
 
 
 ---
