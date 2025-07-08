@@ -41,12 +41,6 @@ Each duck represents a stock ticker and reflects its recent market performance; 
 
 ---
 
-### ♡ Inspired By
-
-[Life of Gaurz – YouTube Channel](https://www.youtube.com/@lifeofgaurz/featured)
-
----
-
 ### How to Run Locally
 
 1. **Clone the repo**
