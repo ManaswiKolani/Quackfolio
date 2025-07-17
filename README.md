@@ -5,7 +5,7 @@
 
 
 
-Quackfolio is a **stock portfolio companion** that helps you visualize your stock selections as adorable ducks floating in a pond.  
+Quackfolio (a playfully unhelpful tracker) is a **stock portfolio companion** that helps you visualize your stock selections as adorable ducks floating in a pond.  
 Each duck represents a stock ticker and reflects its recent market performance; clean ducks represent good stocks, while bad ones are depicted as dirty ducks.
 
 ---
