@@ -39,38 +39,6 @@ Each duck represents a stock ticker and reflects its recent market performance; 
 
 
 
----
-
-### How to Run Locally
-
-1. **Clone the repo**
-   ```bash
-    git clone https://github.com/your-username/quackfolio.git
-    cd quackfolio
-    python -m venv venv
-    source venv/bin/activate     # On Windows: venv\Scripts\activate 
-    pip install -r requirements.txt
-    ```
-
-2. Create .env file:
-  ```bash
-      cp .env.example .env
-  ```
-Open .env and set:
-  ```bash
-  SECRET_KEY=your-very-secret-key
-  
-  ```
-3. Run the app:
-
-  ```bash
-   python run.py
-  ```
-
-4. **Visit Site**
-
-  Open your browser and go to http://localhost:5000
-
 
 ### 𓅭 Credits  
 Duck icons and background drawn by hand.  
