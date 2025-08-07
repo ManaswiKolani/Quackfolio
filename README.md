@@ -6,8 +6,6 @@
 
 
 Quackfolio (a playfully unhelpful tracker) is a **stock portfolio companion** that helps you visualize your stock selections as adorable ducks floating in a pond.  
-Each duck represents a stock ticker and reflects its recent market performance; clean ducks represent good stocks, while bad ones are depicted as dirty ducks.
-
 ---
 
 ### 𓅭 What Does Quackfolio Do?
@@ -18,17 +16,7 @@ Each duck represents a stock ticker and reflects its recent market performance; 
   - Price, change, percent change
   - Volume, Avg volume, Market Cap
   - P/E Ratio, 52 Week Change
-  - A mini graph of the past month’s performance!
-
----
-
-### 𓅭 How Is It Built?
-
-- **Frontend**: HTML, CSS, JavaScript  
-- **Backend**: Flask (Python)
-- **APIs**: [yfinance](https://pypi.org/project/yfinance/) for live stock data  
-- **Visualization**: Matplotlib (for 30-day line graphs)  
-- **Design**: Mobile-first, custom duck art
+  - A mini graph of the past month’s performance
 
 ---
 
