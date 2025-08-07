@@ -2,7 +2,6 @@
   <img src="https://www.thiings.co/_next/image?url=https%3A%2F%2Flftz25oez4aqbxpq.public.blob.vercel-storage.com%2Fimage-Jx48f8Wr7UdZla7hCMTfodBv61PiKB.png&w=2048&q=75" width="100"/>
   Quackfolio
 </h1>
----
 
 Quackfolio (a playfully unhelpful tracker) is a **stock portfolio companion** that helps you visualize your stock selections as adorable ducks floating in a pond.  
 
